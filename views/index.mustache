@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat</title>
+
+    <!-- style  -->
+    <link rel="stylesheet" href="/css/style.css">
+    <!-- icons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body> 
+    <div class="container">
+
+        <div class="icons-bar">
+            <div class="profil-icons">
+                <div class="profil">
+                    <div class="top">
+                        <img src="/images/user03.jpg">
+                    </div>
+                    <div class="name">
+                        <h5>Alexa <i class='bx bx-chevron-down'></i></h5>
+                    </div>
+                </div>
+                <div class="icons-nav">
+                    <ul>
+                        <li><i class='bx bxs-dashboard'></i></li>
+                        <li class="active"><i class='bx bx-message-rounded-detail'></i></li>
+                        <li><i class='bx bx-check-circle'></i></li>
+                        <li><i class='bx bx-star'></i></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="setting-icon">
+                <i class='bx bx-cog' ></i>
+            </div>
+        </div>
+
+        <div class="search-contact">
+            <div class="search">
+                <label for="search"><i class='bx bx-search'></i></label>
+                <input type="text" id="search" placeholder="Search in your inbox">
+            </div>
+            <div class="contact">
+                <!-- <div class="contact-box">
+                    <div class="img">
+                        <img src="/images/user05.jpg">
+                    </div>
+                    <div class="text">
+                        <h3>Mlle. Ivy</h3>
+                        <p>Moved thing. Second third unto behold herb. His  created</p>
+                    </div>
+                    <div class="date">
+                        <h4>Just now</h4>
+                        <p>5</p>
+                    </div>
+                </div> -->
+
+            </div>
+        </div>
+
+        <div class="messages">
+            <div class="top-bar">
+                <div class="back"><i class='bx bx-arrow-back' ></i></div>
+                <div class="open-profile"><i class='bx bx-dots-vertical-rounded'></i></div>
+                <div class="profil">
+                    <div class="img">
+                        <img src="/images/user04.jpg">
+                    </div>
+                    <div class="text">
+                        <h3>Assistant IA <i class='bx bxs-circle'></i></h3>
+                        <p>Active Now</p>
+                    </div>
+                </div>
+                <div class="tools">
+                    <i class='bx bxs-phone' ></i>
+                    <i class='bx bx-video' ></i>
+                    <i class='bx bxs-user-plus'></i>
+                </div>
+            </div>
+            <div class="message-content">
+                <!-- <div class="message-box left">
+                    <div class="img">
+                        <img src="/images/user04.jpg">
+                    </div>
+                    <div class="content">
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, maiores! Vero cum, veritatis at mollitia impedit nam dolorem est cumque dignissimos odit sapiente laborum qui fugiat, eius doloribus! Et, minima.
+                        </p>
+                    </div>
+                    <div class="date">
+                        <p>12:45 AM</p>
+                    </div>
+                </div>
+
+                <div class="message-box right">
+                    <div class="img">
+                        <img src="/images/user03.jpg">
+                    </div>
+                    <div class="content">
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, maiores! Vero cum, veritatis at mollitia impedit
+                        </p>
+                    </div>
+                    <div class="date">
+                        <p>12:50 AM</p>
+                    </div> 
+                </div> -->
+
+               
+
+            </div>
+            
+            <div class="message-form">
+                <div class="input-group">
+                    <span><i class='bx bxs-happy'></i></i></span>
+                    <input id="message" type="text" placeholder="Type a message">
+                    <button id="send-message"><i class='bx bx-send' ></i></button>
+                </div>
+            </div>
+        </div>
+
+        
+
+        <div class="profile">
+            <div class="profil">
+                <h1>Profile Info</h1>
+                <div class="img">
+                    <img src="/images/user04.jpg" alt="">
+                </div>
+                <div class="text">
+                    <h3>Paul</h3>
+                    <p>Active Now</p>
+                </div>
+            </div>
+
+            <div class="attachement">
+                <div class="bar">
+                    <h3>Attachement</h3>
+                    <p>15</p>
+                </div>
+                <div class="content">
+
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+
+    <!-- script -->
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/js/script.js"></script>
+</body>
+</html>
