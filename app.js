@@ -5,6 +5,7 @@ const socketIO = require('socket.io')
 const dotEnv = require('dotenv')
 const router = require('./router/router')
 const completionsIA = require('./function/ia-bot.js')
+const texme = require('texme')
 
 const app = express()
 const  http = require('http').Server(app)
@@ -33,7 +34,7 @@ io.on('connect', (socket) => {
 
     socket.on('chat prompt', async (text) => {
         history = await completionsIA(text, history)
-        socket.emit('chat prompt', history[history.length - 1].content)
+        socket.emit('chat prompt', texme.render(history[history.length - 1].content))
     })
 })
 
