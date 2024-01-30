@@ -38,7 +38,7 @@ const createMessage = (text, date, left=true) => {
 
     const content = document.createElement('div')
     content.classList.add('content')
-    content.innerHTML = `<p>${text}<p>`
+    content.innerHTML = `${text}`
 
     const dateE = document.createElement('date')
     dateE.classList.add('date')
@@ -57,6 +57,7 @@ const send = (text) => {
     const minutes = currentDate.getMinutes();
     const box = createMessage(text, `${hours}:${minutes}`, false)
     messages.appendChild(box)
+    messages.scrollTop = messages.scrollHeight
     socket.emit('chat prompt', text)
 }
 

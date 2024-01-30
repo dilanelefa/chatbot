@@ -379,6 +379,28 @@ body{
     color: #fff;
 }
 
+.messages .message-content .message-box .content pre{
+    font-weight: 500;
+    max-width: 50%;
+    overflow-x: auto;
+}
+
+code{
+    font-style: italic;
+}
+code::after, 
+code::before{
+    content: '``';
+}
+
+.messages .message-content .message-box .content pre::-webkit-scrollbar{
+    height: 2px;
+}
+.messages .message-content .message-box .content pre::-webkit-scrollbar-thumb{
+    background: #5B6A8E;
+}
+
+
 .messages .message-content .message-box.right{
     flex-direction: row-reverse;
     align-self: flex-end;

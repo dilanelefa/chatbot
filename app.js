@@ -27,20 +27,18 @@ let history = [{"role": "system", "content": "You are a helpful assistant."}]
 io.on('connect', (socket) => {
     console.log('user connect')
 
-    socket.emit('chat prompt', history[0].content)
-
     socket.on('disconnect', () =>{
         console.log('user disconnect')
     })
 
     socket.on('chat prompt', async (text) => {
-        history = await completionsIA(text, history);
+        history = await completionsIA(text, history)
         socket.emit('chat prompt', history[history.length - 1].content)
     })
 })
 
 
 
-http.listen(3000, () => {
+http.listen(process.env.PORT || 3000, () => {
     console.log("server running on 3000")
 })
