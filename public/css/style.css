@@ -381,7 +381,7 @@ body{
 
 .messages .message-content .message-box .content pre{
     font-weight: 500;
-    max-width: 50%;
+    max-width: 100%;
     overflow-x: auto;
 }
 
